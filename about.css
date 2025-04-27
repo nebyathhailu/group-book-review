@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'rekalgera';
+    src: url('Fonts/Rekalgera-Regular.otf');
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images//library.jpg');
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height:100vh;
+    justify-items: center;
+    overflow:hidden;
+}
+h1{
+    color:#04C4D9;
+    font-size: 50px;
+}
+.main{
+    margin-top: 13%;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    color:#ffffff;
+    width:70%;
+    height:300px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 2% 5% 25% 5%;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    display: inline-block;
+    background-color: #04C4D9;
+    border-radius: 50px;
+    margin-top: 1%;
+    justify-items: center;
+    width:100%;
+    text-align: center;
+    padding:5px 0;
+    z-index: 1000;
+    >ul a{
+        font-size: 30px;
+        text-decoration: none;
+        color:#BF784E;
+        padding:25px;
+        font-family: rekalgera;
+    }
+    >ul{
+        list-style-type:none;
+        display:flex;
+    }
+}
+i{
+    color:white;
+}
+.drop-down{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size: 30px;
+        font-family: rekalgera;
+        margin-right: 25px;
+        color:#BF784E;
+    }
+}
+.read-book, .blogs{
+    background-color:#BF784E;
+    border-radius: 20px;
+    display:none;
+    position:absolute;
+    top:90%;
+    ul{
+        list-style-type: none;
+        padding:5px;
+    }
+    
+    li{
+        color: rgb(255,255,255);
+        font-family: rekalgera;
+        border-bottom:white 2px dotted;
+        margin: 0 2px;
+    }
+    a{
+        color: rgb(255,255,255);
+    }
+    a:hover{
+        color: rgb(25,25,25);
+    }
+}
+.read-book{
+    width:350px;
+    left:-100%;
+}
+.blogs{
+    width:280px;
+    left:-45%;
+}
+.drop-down:hover .read-book , .drop-down:hover .blogs{
+    display:block;
+}
+
+
+
