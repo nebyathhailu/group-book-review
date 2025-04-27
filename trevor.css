@@ -190,3 +190,591 @@ footer{
     justify-items: center;
     color:#04C4D9;
 }
+@media only screen and (min-width:414px) and (max-width:769px){
+    *{
+        margin:0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'kugile';
+        src: url('Fonts/Kugile_Demo.ttf');
+    }
+    @font-face {
+        font-family:'agraham' ;
+        src: url('Fonts/Agraham.otf');
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+    .heading-with-line{
+        font-family: 'kugile';
+        display:flex;
+        font-size: 35px;
+        align-items: center;
+        text-align: center;
+        width:100%;
+        padding: 10px;
+        color:#BF784E;
+        h1{
+            margin-top: 0.3em;
+        }
+    }
+    
+    .heading-with-line::before,.heading-with-line::after{
+        content:"";
+        flex:1;
+        border-bottom: 2px solid #04C4D9;
+    }
+    .heading-with-line:not(:empty)::before{
+        margin-right: 0.5em;
+    }
+    .heading-with-line:not(:empty)::after{
+        margin-left: 0.5em;
+    }
+    .issue{
+        border-radius: 15px;
+        padding: 0 5%;
+        p{
+            font-size:20px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 2%;
+            color:#c57344;
+            font-size: 30px;
+        }
+    }
+    .introduction{
+        padding-left:12%;
+        flex-direction: column;
+        gap:20px;
+        justify-items: center;
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+        border-bottom: 2px solid #04C4D9;
+        img{
+            width: 300px;
+            border-radius: 50px;
+        }
+    }
+    
+    .main-image{
+        width: 300px;
+        height:300px;
+        border-radius: 50px;
+        align-items: center;
+    }
+    .image-container{
+        justify-self: center;
+        margin-bottom: 2%;
+    }
+    .text-container{
+        width:70%;
+        justify-self: center;
+        margin-bottom: 5%;
+    }
+    .text-content{
+        width:70%;
+        padding-top: 5%;
+        h1{
+            color:#04C4D9;
+            font-size: 50px;
+            font-family: kugile;
+            text-align: center;
+        }
+    }
+    .essence{
+        width:70%;
+       margin:5% 15%;
+       font-family: agraham;
+       h1{
+        font-size: 17px;
+       }
+       .fa-solid{
+        font-size:25px;
+       }
+       .fa-quote-right{
+        justify-self:end;
+        margin-left: 100%;
+       }
+       
+    }
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
+        background-size:cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        /* position: sticky; */
+        top:0;
+        justify-items: center;
+        width:100%;
+        text-align: center;
+        padding:1% 0;
+        z-index: 1000;
+        >ul a{
+            font-size: 30px;
+            text-decoration: none;
+            color:#BF784E;
+            padding:25px;
+            font-family: rekalgera;
+        }
+        >ul{
+            list-style-type:none;
+            display:flex;
+        }
+    }
+    i{
+        color:#04C4D9;
+    }
+    .drop-down{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+            margin-right: 25px;
+            color:#BF784E;
+        }
+    }
+    .read-book, .blogs
+    {
+        background-color:#BF784E;
+        border-radius: 20px;
+        display:none;
+        position:absolute;
+        top:90%;
+        ul{
+            list-style-type: none;
+            padding:5px;
+        }
+        
+        li{
+            color: rgb(255,255,255);
+            font-family: rekalgera;
+            border-bottom:white 2px dotted;
+            margin: 0 2px;
+        }
+        a{
+            color: rgb(255,255,255);
+        }
+        a:hover{
+            color: rgb(25,25,25);
+        }
+    }
+    .read-book{
+        width:350px;
+        left:-100%;
+    }
+    .blogs
+    {
+        width:280px;
+        left:-45%;
+    }
+    .drop-down:hover .read-book , .drop-down:hover .blogs
+    {
+        display:block;
+    }
+    
+    footer{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
+        background-size:cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 1%;
+        font-size: 25px;
+        justify-items: center;
+        color:#04C4D9;
+    }
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    *{
+        margin:0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'kugile';
+        src: url('Fonts/Kugile_Demo.ttf');
+    }
+    @font-face {
+        font-family:'agraham' ;
+        src: url('Fonts/Agraham.otf');
+    }
+    
+    .heading-with-line{
+        font-family: 'kugile';
+        display:flex;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        width:100%;
+        padding: 10px;
+        color:#BF784E;
+        h1{
+            margin-top: 0.3em;
+        }
+    }
+    
+    .heading-with-line::before,.heading-with-line::after{
+        content:"";
+        flex:1;
+        border-bottom: 2px solid #04C4D9;
+    }
+    .heading-with-line:not(:empty)::before{
+        margin-right: 0.5em;
+    }
+    .heading-with-line:not(:empty)::after{
+        margin-left: 0.5em;
+    }
+    .issue{
+        border-radius: 15px;
+        padding: 0 5%;
+        p{
+            font-size:20px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 2%;
+            color:#c57344;
+            font-size: 50px;
+        }
+    }
+    .introduction{
+        padding-left:12%;
+        display:flex;
+        gap:50px;
+        justify-items: center;
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+        border-bottom: 2px solid #04C4D9;
+        img{
+            width: 300px;
+            border-radius: 50px;
+        }
+    }
+    
+    .main-image{
+        width: 600px;
+        height:500px;
+        border-radius: 50px;
+    }
+    .image-container{
+        justify-self: center;
+        margin-bottom: 2%;
+    }
+    .text-container{
+        width:70%;
+        justify-self: center;
+        margin-bottom: 5%;
+    }
+    .text-content{
+        width:70%;
+        padding-top: 5%;
+        h1{
+            color:#04C4D9;
+            font-size: 50px;
+            font-family: kugile;
+            text-align: center;
+        }
+    }
+    .essence{
+        width:70%;
+       margin:5% 15%;
+       font-family: agraham;
+       h1{
+        font-size: 25px;
+       }
+       .fa-solid{
+        font-size:25px;
+       }
+       .fa-quote-right{
+        justify-self:end;
+        margin-left: 100%;
+       }
+       
+    }
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
+        background-size:cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        /* position: sticky; */
+        top:0;
+        justify-items: center;
+        width:100%;
+        text-align: center;
+        padding:1% 0;
+        z-index: 1000;
+        >ul a{
+            font-size: 30px;
+            text-decoration: none;
+            color:#BF784E;
+            padding:25px;
+            font-family: rekalgera;
+        }
+        >ul{
+            list-style-type:none;
+            display:flex;
+        }
+    }
+    i{
+        color:#04C4D9;
+    }
+    .drop-down{
+        position: relative;
+        display:inline-block;
+        p{
+            font-size: 30px;
+            font-family: rekalgera;
+            margin-right: 25px;
+            color:#BF784E;
+        }
+    }
+    .read-book, .blogs
+    {
+        background-color:#BF784E;
+        border-radius: 20px;
+        display:none;
+        position:absolute;
+        top:90%;
+        ul{
+            list-style-type: none;
+            padding:5px;
+        }
+        
+        li{
+            color: rgb(255,255,255);
+            font-family: rekalgera;
+            border-bottom:white 2px dotted;
+            margin: 0 2px;
+        }
+        a{
+            color: rgb(255,255,255);
+        }
+        a:hover{
+            color: rgb(25,25,25);
+        }
+    }
+    .read-book{
+        width:350px;
+        left:-100%;
+    }
+    .blogs
+    {
+        width:280px;
+        left:-45%;
+    }
+    .drop-down:hover .read-book , .drop-down:hover .blogs
+    {
+        display:block;
+    }
+    
+    footer{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
+        background-size:cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 1%;
+        font-size: 25px;
+        justify-items: center;
+        color:#04C4D9;
+    }
+}
+@media(max-width:375px){
+    *{
+    margin:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'kugile';
+    src: url('Fonts/Kugile_Demo.ttf');
+}
+@font-face {
+    font-family:'agraham' ;
+    src: url('Fonts/Agraham.otf');
+}
+
+.heading-with-line{
+    font-family: 'kugile';
+    display:flex;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    padding: 10px;
+    color:#BF784E;
+    h1{
+        margin-top: 0.3em;
+    }
+}
+
+.heading-with-line::before,.heading-with-line::after{
+    content:"";
+    flex:1;
+    border-bottom: 2px solid #04C4D9;
+}
+.heading-with-line:not(:empty)::before{
+    margin-right: 0.5em;
+}
+.heading-with-line:not(:empty)::after{
+    margin-left: 0.5em;
+}
+.issue{
+    border-radius: 15px;
+    padding: 0 5%;
+    p{
+        font-size:15px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 2%;
+        color:#c57344;
+        font-size: 35px;
+    }
+}
+.introduction{
+    padding-left:12%;
+    flex-direction: column;
+    gap:20px;
+    justify-items: center;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #04C4D9;
+    img{
+        width: 300px;
+        border-radius: 50px;
+    }
+}
+
+.main-image{
+    width: 300px;
+    height:300px;
+    border-radius: 50px;
+}
+.image-container{
+    justify-self: center;
+    margin-bottom: 2%;
+}
+.text-container{
+    width:70%;
+    justify-self: center;
+    margin-bottom: 5%;
+}
+.text-content{
+    width:70%;
+    padding-top: 5%;
+    h1{
+        color:#04C4D9;
+        font-size: 40px;
+        font-family: kugile;
+        text-align: center;
+    }
+}
+.essence{
+    width:70%;
+   margin:5% 15%;
+   font-family: agraham;
+   h1{
+    font-size: 15px;
+   }
+   .fa-solid{
+    font-size:25px;
+   }
+   .fa-quote-right{
+    justify-self:end;
+    margin-left: 100%;
+   }
+   
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    /* position: sticky; */
+    top:0;
+    justify-items: center;
+    width:100%;
+    text-align: center;
+    padding:1% 0;
+    z-index: 1000;
+    >ul a{
+        font-size: 20px;
+        text-decoration: none;
+        color:#BF784E;
+        padding:25px;
+        font-family: rekalgera;
+    }
+    >ul{
+        list-style-type:none;
+        display:flex;
+    }
+}
+i{
+    color:#04C4D9;
+}
+.drop-down{
+    position: relative;
+    display:inline-block;
+    p{
+        font-size: 20px;
+        font-family: rekalgera;
+        margin-right: 25px;
+        color:#BF784E;
+    }
+}
+.read-book, .blogs
+{
+    background-color:#BF784E;
+    border-radius: 20px;
+    display:none;
+    position:absolute;
+    top:90%;
+    ul{
+        list-style-type: none;
+        padding:5px;
+    }
+    
+    li{
+        color: rgb(255,255,255);
+        font-family: rekalgera;
+        border-bottom:white 2px dotted;
+        margin: 0 2px;
+    }
+    a{
+        color: rgb(255,255,255);
+    }
+    a:hover{
+        color: rgb(25,25,25);
+    }
+}
+.read-book{
+    width:450px;
+    left:-100%;
+}
+.blogs
+{
+    width:280px;
+    left:-45%;
+}
+.drop-down:hover .read-book , .drop-down:hover .blogs
+{
+    display:block;
+}
+
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/lc-bg.jpg');
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 1%;
+    font-size: 20px;
+    justify-items: center;
+    color:#04C4D9;
+}
+
+}
